@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="workshop-seed">
+<html ng-app="brendan-seed">
 <head>
     <title>Brendan's Test Project</title>
     <% styles.forEach( function ( file ) { %>
@@ -20,6 +20,11 @@
     </script>
 </head>
 <body>
+<div class="wrap">
+    <div class="container body-container">
+        <div ui-view></div>
+    </div>
+</div>
 
 <% scripts.forEach( function ( file ) { %>
 <script type="text/javascript" src="<%= file %>"></script>
